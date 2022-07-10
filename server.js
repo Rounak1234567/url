@@ -10,7 +10,7 @@ app.use(express.json());
 app.get("/", (req, res)=>{
     return res.send("Hello");
 })
-app.use("/short", require("./routes/urlShortener"))
+
 
 
 app.listen(port, (req,res)=>{
