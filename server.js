@@ -7,7 +7,7 @@ var cors = require('cors')
 
 app.use(cors())
 app.use(express.json());
-
+app.options('*', cors())
 
 app.get("/", (req, res)=>{
     return res.send("Hello");
